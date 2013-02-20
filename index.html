@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        </title>      
+        <link rel="stylesheet"  href="css/jquery.mobile-1.2.0.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        </script>
+        <script s src="js/jquery.mobile-1.2.0.min.js">
+        </script>  
+        <script s src="js/actions.js">
+        </script>        
+        <!-- User-generated css -->
+        <style>
+        </style>
+        <!-- User-generated js -->
+        <script>
+            try {
+
+    $(function() {
+
+    });
+
+  } catch (error) {
+    console.error("Your javascript has an error: " + error);
+  }
+        </script>
+    </head>
+    <body>
+        <!-- Acceso -->
+        <div data-role="page" id="acceso">
+            <div data-theme="b" data-role="header">
+                <span class="ui-title">
+                </span>
+                <div data-theme="a" data-role="header">
+                    <h3>
+                        Acceso
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtUsuario">
+                            Usuario:
+                        </label>
+                        <input name="" id="txtUsuario" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtClave">
+                            Clave:
+                        </label>
+                        <input name="" id="txtClave" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <input id="btnAccesar" data-theme="b" value="Accesar" type="submit" />
+                <a id="btnRegistro" data-role="button" data-theme="b" href="#registro">
+                    Registrarse
+                </a>
+                <a id="btnRecuperaClave" data-role="button" data-theme="b" href="#recuperaClave">
+                    Recuperar clave
+                </a>
+            </div>
+        </div>
+        <!-- Registro -->
+        <div data-role="page" id="registro">
+            <div data-theme="b" data-role="header">
+                <span class="ui-title">
+                </span>
+                <div data-theme="a" data-role="header">
+                    <h3>
+                        Registro
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="txtUsuario">
+                        </label>
+                        <input name="" id="txtUsuario" placeholder="" value="Ingrese el usuario" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="txtClave">
+                            Ingrese la clave:
+                        </label>
+                        <input name="" id="txtClave" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="txtClaveConf">
+                            Confirme la clave:
+                        </label>
+                        <input name="" id="txtClaveConf" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="txtEmail">
+                        </label>
+                        <input name="" id="txtEmail" placeholder="" value="Ingrese el email" type="email" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="txtTitular">
+                        </label>
+                        <input name="" id="txtTitular" placeholder="" value="Titular de pago (3 primeras letras)" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="txtNis">
+                        </label>
+                        <input name="" id="txtNis" placeholder="" value="Ingrese el NIS" type="number" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="txtTelefono">
+                        </label>
+                        <input name="" id="txtTelefono" placeholder="" value="Ingrese el telefono" type="tel" />
+                    </fieldset>
+                </div>
+                <input id="btnAceptar" data-theme="b" value="Aceptar" type="submit" />
+                <a id="btnRegresar" data-role="button" data-theme="b" href="#acceso">
+                    Regresar
+                </a>
+            </div>
+        </div>
+        <!-- Recupera Clave -->
+        <div data-role="page" id="recuperaClave">
+            <div data-theme="b" data-role="header">
+                <span class="ui-title">
+                </span>
+                <div data-theme="a" data-role="header">
+                    <h3>
+                        Recuperar clave
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <h5>
+                    Ingrese el email y el NIS que nos proporciono al momento del registro
+            de su cuenta.
+                </h5>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtEmail">
+                        </label>
+                        <input name="" id="txtEmail" placeholder="" value="Ingrese el email" type="email" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtNis">
+                        </label>
+                        <input name="" id="txtNis" placeholder="" value="Ingrese el NIS" type="number" />
+                    </fieldset>
+                </div>
+                <input id="btnAceptar" data-theme="b" value="Aceptar" type="submit" />
+                <a id="btnRegresar" data-role="button" data-theme="b" href="#acceso">
+                    Regresar
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
