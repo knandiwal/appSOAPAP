@@ -7,7 +7,7 @@ $(document).ready(function(e) {
 		});
 
 		
-		$('#acceso .greenButton').tap(function(){ //Obtener Aceleración actual
+		$('.alerta').tap(function(){ //Obtener Aceleración actual
 			pgAlert('eureka', 'mensaje');
 		});
 				
