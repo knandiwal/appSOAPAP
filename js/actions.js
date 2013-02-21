@@ -1,4 +1,6 @@
 // JavaScript Document
+function pgAlert(msj,tit){ navigator.notification.alert(msj, null, tit, 'Aceptar'); }
+
 $(document).ready(function(e) {
     document.addEventListener("deviceready", function(){
 		
